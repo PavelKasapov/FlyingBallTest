@@ -12,7 +12,7 @@ public class PlayerBall : MonoBehaviour
     private Dictionary<Difficulty, float> speedModifier;
 
     public event Action OnHitWall = delegate { };
-    public int verticalDirection = -1; 
+    public int verticalDirection = -1;
     public float verticalSpeed;
 
     private void Start()

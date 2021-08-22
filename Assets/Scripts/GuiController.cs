@@ -62,5 +62,5 @@ public class GuiController : MonoBehaviour
 
     public void SetActiveUI(int uiInt) => SetActiveUI((UI)uiInt);
     public void SetActiveUI(GameObject ui) => SetActiveUI(UIPanel.FirstOrDefault(x => x.Value == ui).Key);
-    
+
 }

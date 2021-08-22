@@ -4,7 +4,7 @@ using Zenject;
 
 public enum Difficulty
 {
-    Easy, 
+    Easy,
     Medium,
     Hard
 }
@@ -17,12 +17,12 @@ public class GameManager : IInitializable, IDisposable
 
     public Difficulty currentDifficulty = Difficulty.Medium;
     public int totalAttempts;
-    public TimeSpan GameTime 
-    { 
-        get 
+    public TimeSpan GameTime
+    {
+        get
         {
             return DateTime.Now - _startTime;
-        } 
+        }
     }
 
     public event Action OnGameStart = delegate { };

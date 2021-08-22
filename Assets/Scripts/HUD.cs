@@ -25,7 +25,7 @@ public class HUD : MonoBehaviour
     {
         _gameManager.SetVerticalDirection(direction);
     }
-    private void StartTimer() 
+    private void StartTimer()
     {
         StartCoroutine(DisplayTimer());
     }
